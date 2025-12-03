@@ -10,6 +10,7 @@ File to modify for the parameters/files on which do the inference:
 Wind speed inpainting from AEMET station for CERRA reanalysis reconstruction via AFNO. 
 - Input variable: windspeed 
 - Patch size: 10x10 
-- Train Epoch: 80 
-<img width="2700" height="750" alt="comparison_plot_fixed" src="https://github.com/user-attachments/assets/9e0589aa-ee6a-4afa-a3ee-727c05bbb8d5" />
-
+- Trained for 171 epoch with patience of 40 epocs 
+<img width="2700" height="750" alt="comparison_plot_fixed (1)" src="https://github.com/user-attachments/assets/c5327112-98f7-4b0c-bcd3-50d72b00d784" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-03 220911" src="https://github.com/user-attachments/assets/cadc2ad7-382d-4906-a1d1-d0f5362290ba" />
+<img width="1919" height="1033" alt="Screenshot 2025-12-03 220859" src="https://github.com/user-attachments/assets/ac8ba313-ceaa-4502-b338-8807cf30adaf" />
