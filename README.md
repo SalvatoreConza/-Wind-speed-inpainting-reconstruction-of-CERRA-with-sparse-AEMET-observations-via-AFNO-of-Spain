@@ -17,8 +17,9 @@ Wind speed inpainting from AEMET station for CERRA reanalysis reconstruction via
 <br />
 <br />
 <br />
+
 - Input variable: windspeed
--  Patch size: 10x10, embedded dimention 768, depth 12, number of blocks 8
+- Patch size: 10x10, embedded dimention 768, depth 12, number of blocks 8
 - Trained for 201 epoch with patience of 40 epocs
 <img width="2700" height="750" alt="comparison_plot_fixed" src="https://github.com/user-attachments/assets/e6ae712e-609f-4a7e-ab22-4b918502a361" />
 
