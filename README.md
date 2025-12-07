@@ -6,29 +6,29 @@ Files to run:
 File to modify for the parameters/files on which do the inference:
 - config/modified_config_file.yaml
 
-modiefied_config_file.yaml controls both training and evaluation. It fedines the model architecture. data paths and hyperparameters. 
+config/modiefied_config_file.yaml controls both training and evaluation. It fedines the model architecture. data paths and hyperparameters. 
 It's made my the classes model, sources, training, evaluation, inference, training, args, logging and metrics.
 
 modified_main_training.py is the primary script for training the model. First I do training here and then the evaluation running another file. 
 It read the the yaml file, load the datas, create the model and initialize the trainer class.
 
-modified_dataloader.py have 4 functions for the normalization and define a class NetCFD_Dataset that prepare the datas for an inpainting problem. 
+data/modified_dataloader.py have 4 functions for the normalization and define a class NetCFD_Dataset that prepare the datas for an inpainting problem. 
 It takes the datas of CERRA and AEMET as input, it organizes them taking dynamical variables, normalize them and give as output some tensors.
 
-modified_normalization.py is a helper to the modified_dataloader.py. 
+model/modified_normalization.py is a helper to the modified_dataloader.py. 
 After specified what normalizzation use in the NetCFD_Dataset this file help us to calculat mean and std (or min & max)
 
-modified_loss.py defines the goal of training, so the loss that we want minimize. It contains different losses defined as classes.
+model/modified_loss.py defines the goal of training, so the loss that we want minimize. It contains different losses defined as classes.
 
-modified_train.py contains the generic train class, in which we have the iterations over epoch, batches, performing formward and backward passes, running validation, 
+model/modified_train.py contains the generic train class, in which we have the iterations over epoch, batches, performing formward and backward passes, running validation, 
 implementing early stoppung and saving checkpoints.
 
-modified_checkpoint,py is an utility, used by the trainer class defined in modified_train.py, to save and load the checkpoints to and from the disk and also how to 
+modified_checkpoint.py is an utility, used by the trainer class defined in modified_train.py, to save and load the checkpoints to and from the disk and also how to 
 chose the best checkpoint
 
 modified_eval.py is a script that take the best checkpoint, load it, run it on a test dataset and produce the model's final prediction
 
-modified_compute_metrics.py is a script that take the ground truth and the prediction and evaluate some key metrics like RMSE and MAE.
+model/modified_compute_metrics.py is a script that take the ground truth and the prediction and evaluate some key metrics like RMSE and MAE.
 
 Wind speed inpainting from AEMET station for CERRA reanalysis reconstruction via AFNO. 
 - Input variable: windspeed 
