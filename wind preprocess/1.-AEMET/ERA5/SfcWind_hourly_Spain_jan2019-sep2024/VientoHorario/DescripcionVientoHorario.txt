@@ -1,0 +1,85 @@
+Campos incluidos:
+     Indicativo: Indicativo climatológico
+     NOMBRE: Nombre estación
+     ALTITUD: Altitud de la estación (metros)
+     NOM_PROV: Provincia
+     LONGITUD: Longitud geográfica
+          (Valores negativos para longitud W y positivos para E)
+     LATITUD: Latitud geográfica
+     DIR_00: Dirección del viento a las 00
+     VEL_00: Velocidad del viento a las 00
+     DIR_01: Dirección del viento a las 01
+     VEL_01: Velocidad del viento a las 01
+     DIR_02: Dirección del viento a las 02
+     VEL_02: Velocidad del viento a las 02
+     DIR_03: Dirección del viento a las 03
+     VEL_03: Velocidad del viento a las 03
+     DIR_04: Dirección del viento a las 04
+     VEL_04: Velocidad del viento a las 04
+     DIR_05: Dirección del viento a las 05
+     VEL_05: Velocidad del viento a las 05
+     DIR_06: Dirección del viento a las 06
+     VEL_06: Velocidad del viento a las 06
+     DIR_07: Dirección del viento a las 07
+     VEL_07: Velocidad del viento a las 07
+     DIR_08: Dirección del viento a las 08
+     VEL_08: Velocidad del viento a las 08
+     DIR_09: Dirección del viento a las 09
+     VEL_09: Velocidad del viento a las 09
+     DIR_10: Dirección del viento a las 10
+     VEL_10: Velocidad del viento a las 10
+     DIR_11: Dirección del viento a las 11
+     VEL_11: Velocidad del viento a las 11
+     DIR_12: Dirección del viento a las 12
+     VEL_12: Velocidad del viento a las 12
+     DIR_13: Dirección del viento a las 13
+     VEL_13: Velocidad del viento a las 13
+     DIR_14: Dirección del viento a las 14
+     VEL_14: Velocidad del viento a las 14
+     DIR_15: Dirección del viento a las 15
+     VEL_15: Velocidad del viento a las 15
+     DIR_16: Dirección del viento a las 16
+     VEL_16: Velocidad del viento a las 16
+     DIR_17: Dirección del viento a las 17
+     VEL_17: Velocidad del viento a las 17
+     DIR_18: Dirección del viento a las 18
+     VEL_18: Velocidad del viento a las 18
+     DIR_19: Dirección del viento a las 19
+     VEL_19: Velocidad del viento a las 19
+     DIR_20: Dirección del viento a las 20
+     VEL_20: Velocidad del viento a las 20
+     DIR_21: Dirección del viento a las 21
+     VEL_21: Velocidad del viento a las 21
+     DIR_22: Dirección del viento a las 22
+     VEL_22: Velocidad del viento a las 22
+     DIR_23: Dirección del viento a las 23
+     VEL_23: Velocidad del viento a las 23
+     R_MAX_DIR: Dirección del viento en la racha máxima
+     R_MAX_VEL: Velocidad de la racha máxima del viento
+     R_MAX_HOR: Hora de la racha máxima
+     DIR_VEL_10: Dirección de la velocidad máxima media del viento en 10'
+     VEL_MED_10: Velocidad máxima media del viento en 10'
+     HOR_VEL_10: Hora de la velocidad máxima media del viento en 10'
+     REC24: Recorrido del viento de 00 a 24
+     REC77: Recorrido del viento de 07 a 07 (desde la 07 del día de la fecha hasta las 07 del día siguiente)
+
+Unidades y valores especiales:
+
+     Horas UTC (Tiempo Universal Coordinado)
+
+     Dirección del viento en decenas de grado
+	Valores especiales dirección del viento:
+		99: Viento variable
+		88: Sin datos
+		 0: Viento en calma
+
+    Velocidad del viento en Km/h
+
+    Recorrido del viento en Km
+
+    Hora de la racha máxima/velocidad máxima media en 10' en horas y minutos    
+	Valores especiales de hora de la racha máxima/velocidad máxima media en 10':
+		9999: La racha máxima/velocidad máxima media en 10' se repite varias veces en el día
+		Si a lo largo del día faltan valores puntuales, pero se incluye la racha maxima, el grupo horario se cifrará:
+			8888: La racha máxima/velocidad máxima media en 10' se repite varias veces en el día.
+			Se sumará 6000 al grupo horario habitual (Ej: 7215 equivaldría a  7215-6000: 1215=12h 15m)
