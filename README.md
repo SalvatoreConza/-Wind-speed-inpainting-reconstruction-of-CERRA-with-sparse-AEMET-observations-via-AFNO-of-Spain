@@ -32,7 +32,7 @@ model/modified_compute_metrics.py is a script that take the ground truth and the
 
 Wind speed inpainting from AEMET station for CERRA reanalysis reconstruction via AFNO. 
 - Input variable: windspeed 
-- Patch size: 10x10, embedded dimension 512, depth 8, number of blocks 4
+- Patch size: 10x10, embedded dimension 512, depth 8, number of blocks 4, dropout=0.0
 - Trained for 171 epoch with patience of 40 epocs
 <img width="2700" height="750" alt="comparison_plot_fixed (1)" src="https://github.com/user-attachments/assets/c5327112-98f7-4b0c-bcd3-50d72b00d784" />
 <img width="1919" height="1079" alt="Screenshot 2025-12-03 220911" src="https://github.com/user-attachments/assets/cadc2ad7-382d-4906-a1d1-d0f5362290ba" />
@@ -42,8 +42,19 @@ Wind speed inpainting from AEMET station for CERRA reanalysis reconstruction via
 <br />
 
 - Input variable: windspeed
-- Patch size: 10x10, embedded dimention 768, depth 12, number of blocks 8
+- Patch size: 10x10, embedded dimention 768, depth 12, number of blocks 8, dropout=0.2
 - Trained for 201 epoch with patience of 40 epocs
 <img width="2700" height="750" alt="comparison_plot_fixed" src="https://github.com/user-attachments/assets/e6ae712e-609f-4a7e-ab22-4b918502a361" />
 
-You can see how the model learn better the global patterns that bound very far pixel so he predict better the windspeed in the ocean
+You can see how the model learn better the global patterns that bound very far pixel so he predict better the windspeed in the ocean. Since the model is much more 
+complex I have introduced I preventivly introduced a dropout for reducting overfitting but this seems by the metrics to constrain the model to not learning enough
+<br />
+<br />
+<br />
+
+- Input variable: windspeed
+- Patch size: 10x10, embedded dimention 768, depth 12, number of blocks 8, dropout=0.0
+- Trained for 201 epoch with patience of 40 epocs
+<br />
+<br />
+<br />
