@@ -82,8 +82,8 @@ Before running any scripts, edit the configuration file to match your environmen
 
 ### 2. Train the Model
 To start the training process:
-```bash
-python modified_main_training.py
+```bash python modified_main_training.py
+
 Wind speed inpainting from AEMET station for CERRA reanalysis reconstruction via AFNO. 
 - Input variable: windspeed 
 - Patch size: 10x10, embedded dimension 512, depth 8, number of blocks 4, dropout=0.0
